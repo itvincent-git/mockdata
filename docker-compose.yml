@@ -2,5 +2,6 @@ version: '3.8'
 services:
   node-json-server:
     build: .
+    restart: always  # Added restart policy
     ports:
       - "3001:3000"
